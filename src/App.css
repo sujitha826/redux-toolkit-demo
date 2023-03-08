@@ -4,6 +4,10 @@
   padding: 15px;
 }
 
+img {
+  margin: 20px;
+}
+
 .login input {
   padding: 10px;
   margin: 20px 20px;
@@ -39,4 +43,13 @@
   margin-top: 15px;
   list-style: none;
   margin-left: 25px;
+}
+
+.loading {
+  background-color: rgb(211, 204, 143);
+  box-sizing: border-box;
+  width: 110px;
+  margin: auto;
+  border: #000;
+  padding: auto;
 }

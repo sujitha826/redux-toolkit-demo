@@ -53,13 +53,14 @@ export const Login = () => {
         dispatch(logout());
     }
 
+    // run twice on mount since StrictMode is enabled in React 18, even if empty dependency array is provided.
     useEffect(() => {
         const loadUsers = async () => {
             //dispatch the thunk as needed in the app
             dispatch(fetchUsers(4));
         };
         loadUsers();
-    }, [dispatch]); // run once on mount
+    }, [dispatch]); 
 
     return <div className='login'> <h2>{username}</h2>
         <input type="text" value={newUsername} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setNewUsername(e.target.value)} />
