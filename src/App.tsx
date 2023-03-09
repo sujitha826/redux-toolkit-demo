@@ -3,7 +3,6 @@ import { Home } from "./pages/HomePage";
 import { Contact } from "./pages/ContactPage";
 import { Login } from "./pages/LoginPage";
 import { useSelector } from "react-redux";
-// import { Suspense } from "react";
 
 function App() {
   const selectedTheme = useSelector((state: any) => state.theme.value.theme);

@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import ReactQuery from "../components/ReactQuery";
+// import ReactQuery from "../components/ReactQuery";
 
 export const Home = () => {
     const username = useSelector((state: any) => state.user.value.username);
@@ -9,6 +9,5 @@ export const Home = () => {
         <h2> THIS IS THE HOME PAGE</h2>
         User : {username ? username : 'No user logged in'}
         <span><p>Theme : {currentTheme}</p></span>
-        <ReactQuery />
     </div>;
 };

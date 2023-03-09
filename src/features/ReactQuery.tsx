@@ -18,7 +18,7 @@ function ReactQuery() {
   // But if we call getDog() method twice instead, 2 different images will be shown on 2 places.
   return (
     <QueryClientProvider client={client}>
-      <Suspense fallback={<div className="loading"><h3> Loading...</h3></div>}>
+      <Suspense fallback={<div className="loading"><h3> Loading... </h3></div>}>
         <Dog1 />
         <Dog2 />
       </Suspense>
