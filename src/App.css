@@ -59,5 +59,13 @@ img {
 }
 
 .home {
-  margin: 20px;
+  margin-top: 20px;
+}
+
+.home button {
+  border: none;
+  background-color: aquamarine;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
 }

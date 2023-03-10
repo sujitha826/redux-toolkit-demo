@@ -1,0 +1,63 @@
+/* Overlay or Modal container or outside region of modal*/
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.modal.show {
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.modal-content {
+    width: 400px;
+    background-color: rgba(52, 198, 243, 0.637);
+    border-radius: 15px;
+    transform: translateX(-450px);
+    transition: all 0.3s ease-in-out;
+}
+
+.modal.show .modal-content {
+    transform: translateX(-200px);
+}
+
+.modal-title {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.modal-header,
+.modal-footer {
+    padding: 10px;
+}
+
+.modal-body {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-button {
+    color: #29596e;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: #aaaaaa42;
+    border-radius: 15px;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
